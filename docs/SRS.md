@@ -190,7 +190,7 @@ O contexto é de avaliação profissional rápida, exigindo clareza, objetividad
 
 ### Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](diagramas/casos-de-uso.png)
+![Diagrama de Casos de Uso](diagramas/Captura de tela 2026-02-17 175130.png)
 
 
 ### Casos mapeados:
