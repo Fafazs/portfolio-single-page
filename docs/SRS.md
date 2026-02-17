@@ -197,11 +197,21 @@ O contexto é de avaliação profissional rápida, exigindo clareza, objetividad
 
 # 8. Fluxos do Sistema
 
-### Fluxograma Geral do Sistema
+### Fluxograma do Usuario
 
 ![Fluxograma do Usuario](diagramas/fluxograma-usuario1.png)
 ![Fluxograma do Usuario](diagramas/fluxograma-usuario2.png)
 ![Fluxograma do Usuario](diagramas/fluxograma-usuario3.png)
+
+### Fluxograma do Autenticação (Admin)
+
+![Fluxograma do Admin](diagramas/fluxograma-admin.png)
+
+### Diagrama Sistema Swimlanes
+
+![Diagrama do Sistema](diagramas/diagrama-sistema1.png)
+![Diagrama do Sistema](diagramas/diagrama-sistema2.png)
+![Diagrama do Sistema](diagramas/diagrama-sistema3.png)
 
 ---
 
