@@ -193,28 +193,15 @@ O contexto é de avaliação profissional rápida, exigindo clareza, objetividad
 ![Diagrama de Casos de Uso](diagramas/caso-de-uso.png)
 
 
-### Casos mapeados:
-
-- UC01 – Visualizar Portfólio  
-- UC02 – Visualizar Projetos  
-- UC03 – Visualizar Comentários  
-- UC04 – Curtir  
-- UC05 – Registrar Acesso  
-- UC06 – Login  
-- UC07 – Enviar Comentário  
-- UC08 – Editar Comentário  
-- UC09 – Aprovar Comentário  
-- UC10 – Excluir Comentário  
-- UC11 – Visualizar Métricas  
-- UC12 – Receber Notificação  
-
 ---
 
 # 8. Fluxos do Sistema
 
 ### Fluxograma Geral do Sistema
 
-![Fluxograma do Sistema](diagramas/fluxograma-sistema.png)
+![Fluxograma do Usuario](diagramas/fluxograma-usuario1.png)
+![Fluxograma do Usuario](diagramas/fluxograma-usuario2.png)
+![Fluxograma do Usuario](diagramas/fluxograma-usuario3.png)
 
 ---
 
