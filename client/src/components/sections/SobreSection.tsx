@@ -1,4 +1,4 @@
-export function Sobre() {
+export function SobreSection() {
   return (
     <section>
       <h2>Sobre Mim</h2>

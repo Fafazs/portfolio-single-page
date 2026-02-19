@@ -1,13 +1,13 @@
-import { Home } from "./Home"
-import { Sobre } from "./Sobre"
-import { Projetos } from "./Projetos"
+import { HomeSection } from "../components/sections/HomeSection"
+import { SobreSection } from "../components/sections/SobreSection"
+import { ProjetoSection } from "../components/sections/ProjetoSection"
 
 export function Portfolio() {
   return (
     <>
-      <Home />
-      <Sobre />
-      <Projetos />
+      <HomeSection />
+      <SobreSection />
+      <ProjetoSection />
     </>
   )
 }
