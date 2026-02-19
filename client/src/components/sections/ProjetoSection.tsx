@@ -1,8 +1,12 @@
+import { Container } from "../ui/Container"
+
 export function ProjetoSection() {
   return (
-    <section>
+    <section id="projetos">
+      <Container >
       <h2>Projetos</h2>
       <p>Aqui estarão meus principais projetos.</p>
+      </Container>
     </section>
   )
 }

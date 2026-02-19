@@ -1,3 +1,5 @@
+import { Navbar } from "../components/ui/Navbar"
+
 type Props = {
   children: React.ReactNode
 }
@@ -6,13 +8,14 @@ export function MainLayout({ children }: Props) {
   return (
     <div>
       <header>
+        <Navbar />
         <h2>Portfolio SP</h2>
       </header>
 
-      <main>{children}</main>
+     <main>{children}</main>
 
-      <footer>
-        <p>© 2026 Fabrício Nascimento</p>
+      <footer style={{ padding: "40px", textAlign: "center" }}>
+        © 2026 Fabrício
       </footer>
     </div>
   )
