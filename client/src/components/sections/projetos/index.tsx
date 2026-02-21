@@ -1,6 +1,6 @@
-import { Container } from "../ui/Container"
+import { Container } from "../../ui/Container"
 
-export function ProjetoSection() {
+export function ProjetosSection() {
   return (
     <section id="projetos">
       <Container >

@@ -1,4 +1,4 @@
-import { Navbar } from "../components/ui/Navbar"
+import { Navbar } from "./Navbar"
 
 type Props = {
   children: React.ReactNode
@@ -9,7 +9,6 @@ export function MainLayout({ children }: Props) {
     <div>
       <header>
         <Navbar />
-        <h2>Portfolio SP</h2>
       </header>
 
      <main>{children}</main>

@@ -1,6 +1,6 @@
-import { Container } from "../ui/Container"
-import { HeroImage } from "../hero/HeroImage.tsx"
-import { SocialSidebar } from "../hero/SocialSidebar.tsx"
+import { Container } from "../../ui/Container.tsx"
+import { HeroImage } from "./HeroImage.tsx"
+import { SocialSidebar } from "./SocialSidebar.tsx"
 
 export function HeroSection() {
   return (
