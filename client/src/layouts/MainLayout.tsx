@@ -11,10 +11,14 @@ export function MainLayout({ children }: Props) {
         <Navbar />
       </header>
 
-     <main>{children}</main>
+      <main>{children}</main>
 
-      <footer style={{ padding: "40px", textAlign: "center" }}>
-        © 2026 Fabrício
+      <footer style={{ padding: "40px", textAlign: "center", border: "0.8px solid #ccc", marginTop: "40px" }}>
+        <strong>Obrigado por visitar meu portfólio.
+          Gostou da experiência? Fique a vontade para deixar um feedback!</strong>
+        <br />
+        <br />
+        © 2026 Fabrício — Todos os direitos reservados
       </footer>
     </div>
   )
