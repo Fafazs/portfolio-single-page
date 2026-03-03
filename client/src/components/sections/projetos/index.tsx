@@ -1,10 +1,19 @@
 import { Container } from "../../ui/Container"
 import { useStarredProjects } from "../../../hooks/useStarredProjects"
+import { useCarousel } from "../../../hooks/useCarousel"
 import ProjectsCarousel from "./ProjectsCarousel"
 
 export function ProjetosSection() {
   const { projects, loading, error } =
     useStarredProjects("Fafazs")
+
+  const {
+    currentIndex,
+    prevIndex,
+    nextIndex,
+    goNext,
+    goPrev
+  } = useCarousel(projects.length)
 
   return (
     <section id="projetos">
@@ -17,7 +26,14 @@ export function ProjetosSection() {
         {error && <p>{error}</p>}
 
         {!loading && !error && projects.length > 0 && (
-          <ProjectsCarousel projects={projects} />
+          <ProjectsCarousel
+            projects={projects}
+            currentIndex={currentIndex}
+            prevIndex={prevIndex}
+            nextIndex={nextIndex}
+            onNext={goNext}
+            onPrev={goPrev}
+          />
         )}
 
         {!loading && !error && projects.length === 0 && (
