@@ -1,0 +1,70 @@
+/* ================= BOX SIZING ================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ================= REMOVE DEFAULT MARGINS ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= ROOT BEHAVIOR ================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= BODY BASE ================= */
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ================= MEDIA ================= */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* ================= FORM ELEMENTS ================= */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ================= BUTTON RESET ================= */
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ================= LIST RESET ================= */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ================= LINKS ================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

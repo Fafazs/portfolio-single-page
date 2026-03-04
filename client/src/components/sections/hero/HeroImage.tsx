@@ -1,11 +1,16 @@
-export function HeroImage() {
-    return (
-        <div className="hero-image">
-            <img
-                src="https://via.placeholder.com/250"
-                alt="Foto de Fabrício"
-            />
+type HeroImageProps = {
+  src: string
+  alt: string
+  className?: string
+}
 
-        </div>
-    )
+export function HeroImage({ src, alt, className }: HeroImageProps) {
+  return (
+    <div className={className}>
+      <img
+        src={src}
+        alt={alt}
+      />
+    </div>
+  )
 }
