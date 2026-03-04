@@ -81,6 +81,10 @@
 /* ================= Mobile Responsive ================= */
 
 @media (max-width: 768px) {
+  .HeroSection {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+  }
   .heroImage{
     max-width: 250px;
   }
@@ -102,6 +106,10 @@
 }
 
 @media (max-width: 480px) {
+  .HeroSection {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
   .heroImage {
     max-width: 200px;
   }
@@ -111,7 +119,7 @@
   }
 
   .title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
   }
 
   .role {
