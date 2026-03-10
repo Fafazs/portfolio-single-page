@@ -1,0 +1,38 @@
+.ProjetoSection {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+
+.projetoContainer {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetoContainer header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projetoContainer header h2 {
+    font-size: var(--font-size-4xl);
+    color: var(--color-primary);
+}
+
+.projetoContainer header p {
+    font-size: var(--font-size-lg);
+    color: var(--color-muted);
+}
+
+
+@media (max-width: 768px) {
+    .projetoContainer header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

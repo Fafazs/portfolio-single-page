@@ -1,11 +1,14 @@
 :root {
   /* ================= COLORS ================= */
-  --color-background: #0f172a;
-  --color-surface: #1e293b;
-  --color-primary: #3b82f6;
-  --color-secondary: #38bdf8;
-  --color-text: #f1f5f9;
-  --color-muted: #94a3b8;
+ 
+  --color-background: #1c1917;
+  --color-surface: #292524;
+  --color-primary: #f97316;
+  --color-secondary: #fb923c;
+  --color-tertiary:  #fda053;;
+  --color-sideBar: #fafaf985;
+  --color-text: #fafaf9;
+  --color-muted: #a8a29e;
 
   /* ================= TYPOGRAPHY ================= */
   --font-primary: 'Inter', sans-serif;
@@ -35,6 +38,13 @@
   --spacing-md: 16px;
   --spacing-lg: 32px;
   --spacing-xl: 64px;
+  --spacing-2xl: 128px;
+  --spacing-3xl: 256px;
+  --spacing-3-5xl: 384px;
+  --spacing-4xl: 512px;
+  --spacing-5xl: 1024px;
+  --spacing-6xl: 2048px;
+  --spacing-7xl: 4096px;
 
   /* ================= BORDER RADIUS ================= */
   --radius-sm: 6px;

@@ -4,6 +4,7 @@ import type { GithubRepo } from "../../../types/GithubRepo"
 import ProjectCardMain from "./ProjectCardMain"
 import ProjectCardSide from "./ProjectCardSide"
 import ArrowButton from "./ArrowButton"
+import styles from "./ProjectsCarousel.module.css"
 
 interface ProjectsCarouselProps {
   projects: GithubRepo[]
@@ -28,7 +29,7 @@ export default function ProjectsCarousel({
   if (total === 0) return null
 
   return (
-    <div className="relative flex items-center justify-center gap-6">
+    <div className={styles.carousel}>
 
       {total > 1 && (
         <ArrowButton
@@ -36,6 +37,8 @@ export default function ProjectsCarousel({
           onClick={onPrev}
         />
       )}
+
+      <div>
 
       {total > 1 && (
         <ProjectCardSide
@@ -52,6 +55,8 @@ export default function ProjectsCarousel({
           repo={projects[nextIndex]}
         />
       )}
+
+      </div>
 
       {total > 1 && (
         <ArrowButton

@@ -1,0 +1,15 @@
+.carousel{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    padding: 30px 0;
+}
+
+.carousel div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}

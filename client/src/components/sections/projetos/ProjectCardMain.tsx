@@ -1,4 +1,5 @@
 import type { GithubRepo } from "../../../types/GithubRepo"
+import styles from "./Cards.module.css"
 
 interface ProjectCardMainProps {
   repo: GithubRepo
@@ -11,15 +12,18 @@ export default function ProjectCardMain({
     repo.customDescription || repo.description
 
   return (
-    <article>
+    <article className={styles.cardMain}>
       <a
         href={repo.html_url}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
+        <h3>{repo.name}</h3>
+      </a>
+       <img
           src={repo.image}
           alt={repo.name}
+          className={styles.mainImg}
           onError={(e) => {
             (e.currentTarget as HTMLImageElement).src =
               "/assets/default-project.png"
@@ -27,18 +31,16 @@ export default function ProjectCardMain({
         />
 
         <div>
-          <h3>{repo.name}</h3>
 
-          {description && <p>{description}</p>}
-
-          <div>
-            {repo.language && (
-              <span>{repo.language}</span>
-            )}
-            <span>⭐ {repo.stargazers_count}</span>
-          </div>
+          {description && <p className={styles.description}>{description}</p>}
         </div>
-      </a>
+          <div className={styles.info}>
+            {repo.language && (
+              <span className={styles.span}>{repo.language}</span>
+            )}
+            <span className={styles.span}>⭐ {repo.stargazers_count}</span>
+          </div>
+        
     </article>
   )
 }

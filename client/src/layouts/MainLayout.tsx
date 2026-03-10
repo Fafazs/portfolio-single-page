@@ -13,9 +13,8 @@ export function MainLayout({ children }: Props) {
 
       <main>{children}</main>
 
-      <footer style={{ padding: "40px", textAlign: "center", border: "0.8px solid #ccc", marginTop: "40px" }}>
-        <strong>Obrigado por visitar meu portfólio.
-          Gostou da experiência? Fique a vontade para deixar um feedback!</strong>
+      <footer style={{ padding: "40px", textAlign: "center", borderTop: "0.5px solid #ccc", marginTop: "40px" }}>
+        <strong>Obrigado por visitar meu portfólio.</strong>
         <br />
         <br />
         © 2026 Fabrício — Todos os direitos reservados
