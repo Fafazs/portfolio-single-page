@@ -1,0 +1,128 @@
+/* ================= SECTION BASE WEB RESPONSIVE ================= */
+
+.HeroSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: var(--spacing-lg);
+}
+
+/* ================= LAYOUT WRAPPER ================= */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+/* ================= TYPOGRAPHY BLOCK ================= */
+
+.subtitle {
+  font-size: var(--font-size-3xl);
+}
+
+.title {
+  font-size: var(--font-size-7xl);
+}
+
+.role {
+  font-size: var(--font-size-lg);
+}
+
+/* ================= IMAGE WRAPPER ================= */
+
+.imageWrapper {
+  width: 100%;
+}
+
+/* Wrapper da imagem */
+.heroImage {
+  max-width: 380px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: scale(1.1);
+  transform-origin: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.heroImage img:hover {
+  transform: scale(1.15) translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= SOCIAL WRAPPER ================= */
+
+.socialWrapper {
+  margin-top: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+}
+
+/* ================= Mobile Responsive ================= */
+
+@media (max-width: 768px) {
+  .HeroSection {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+  }
+  .heroImage{
+    max-width: 250px;
+  }
+  .content {
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: var(--font-size-md);
+  }
+
+  .title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .role {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .HeroSection {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
+  .heroImage {
+    max-width: 200px;
+  }
+
+  .subtitle {
+    font-size: var(--font-size-sm);
+  }
+
+  .title {
+    font-size: var(--font-size-xl);
+  }
+
+  .role {
+    font-size: var(--font-size-xs);
+  }
+}

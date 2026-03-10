@@ -1,0 +1,137 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.cardMain {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: var(--spacing-md);
+    max-width: var(--spacing-4xl);
+    max-height: var(--spacing-5xl);
+    min-height: var(--spacing-4xl);
+    width: 80%;
+    border-radius: var(--radius-lg);
+    gap: 10px;
+    border: 2px solid var(--color-primary);
+}
+
+.cardMain a h3 {
+    flex-basis: 15%;
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+}
+
+.cardMain a {
+    text-decoration: none;
+}
+
+.cardMain a:hover h3 {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.description {
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+    min-height: var(--spacing-3xl);
+    overflow-y: scroll;
+}
+
+.info {
+    border-top: 2px solid var(--color-primary);
+    padding: 10px;
+    position: static ;
+    bottom: 0;
+}
+
+
+.span {
+    font-size: var(--font-size-sm);
+    color: var(--color-muted);
+}
+
+.mainImg {
+    width: 50%;
+    height: 50%;
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-sm);
+    padding: 10px;
+}
+
+.cardSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 15%;
+    min-height: var(--spacing-3xl);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+}
+
+.sideImg {
+    margin: 0px;
+    width: 40%;
+    height: 40%;
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-sm);
+}
+
+@media (max-width: 1200px) {
+    .cardSide {
+        width: 9%;
+        min-height: 22vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cardSide {
+        display: none;
+    }
+
+    .cardMain {
+        overflow-y: scroll;
+        text-decoration: none;
+    }
+}
+
+/* tornar projeto responsivo a partir de 800px */
+
+@media (max-width: 800px) {
+    .cardMain {
+        min-width: var(--spacing-3xl);
+    }
+
+    .cardMain a h3 {
+        font-size: var(--font-size-sm);
+    }
+
+    .description {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 500px) {
+    .cardMain {
+        min-width: var(--spacing-2-5xl);
+        min-height: var(--spacing-3-5xl);
+    }
+
+    .cardMain a h3 {
+        font-size: var(--font-size-xs);
+    }
+
+    .mainImg {
+        width: 80%;
+        height: 80%;
+    }
+
+    .description {
+        font-size: var(--font-size-xs);
+        max-height: var(--spacing-2xl);
+    }
+}
