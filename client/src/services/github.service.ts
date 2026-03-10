@@ -13,7 +13,7 @@ export async function fetchStarredRepos( username: string): Promise<GithubRepo[]
   const data = await response.json()
 
   return data.map((repo: GithubRepo) => {
-    const metadata = projectsMetadata[repo.name]
+    const metadata = projectsMetadata[repo.id]
 
     return {
       ...repo,

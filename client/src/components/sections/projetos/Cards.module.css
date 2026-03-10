@@ -24,6 +24,15 @@
     color: var(--color-primary);
 }
 
+.cardMain a {
+    text-decoration: none;
+}
+
+.cardMain a:hover h3 {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
 .description {
     font-size: var(--font-size-md);
     color: var(--color-text);
@@ -34,7 +43,7 @@
 .info {
     border-top: 2px solid var(--color-primary);
     padding: 10px;
-    position: absolute;
+    position: static ;
     bottom: 0;
 }
 
@@ -108,7 +117,7 @@
 
 @media (max-width: 500px) {
     .cardMain {
-        min-width: var(--spacing-2xl);
+        min-width: var(--spacing-2-5xl);
         min-height: var(--spacing-3-5xl);
     }
 
@@ -123,5 +132,6 @@
 
     .description {
         font-size: var(--font-size-xs);
+        max-height: var(--spacing-2xl);
     }
 }
