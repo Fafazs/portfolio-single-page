@@ -1,6 +1,6 @@
 import type { GithubRepo } from "../../../types/GithubRepo"
 import styles from "./Cards.module.css"
-import defaultProject from "../../../assets/default-project.png";
+import defaultProject from "../../../assets/projetos/default.png";
 
 interface ProjectCardMainProps {
   repo: GithubRepo
