@@ -58,7 +58,7 @@ O projeto continuará evoluindo com melhorias progressivas, incluindo:
 
 ## 🌐 Deploy
 
-🔗 [(Inserir link aqui)](https://portfolio-single-page-438n.vercel.app/)
+🔗 [(link aqui)](https://portfolio-single-page-438n.vercel.app/)
 
 ---
 
