@@ -1,5 +1,6 @@
 import type { GithubRepo } from "../../../types/GithubRepo"
 import styles from "./Cards.module.css"
+import defaultProject from "../../../assets/default-project.png";
 
 interface ProjectCardMainProps {
   repo: GithubRepo
@@ -26,7 +27,7 @@ export default function ProjectCardMain({
           className={styles.mainImg}
           onError={(e) => {
             (e.currentTarget as HTMLImageElement).src =
-              "/assets/default-project.png"
+              defaultProject
           }}
         />
 
